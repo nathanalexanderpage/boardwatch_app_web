@@ -1,0 +1,76 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: 0.8rem;
+    background-color: aquamarine;
+}
+
+nav {
+    background-color: darkcyan;
+}
+
+nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav > ul > li > a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: cornsilk;
+    text-decoration-line: none;
+}
+
+nav > ul > li > a:hover {
+    background-color: teal;
+}
+
+main {
+    height: 100%;
+    padding: 2rem;
+    background-color: cadetblue;
+}
+
+section.main {
+    margin: 0 0 1rem 0;
+    border-radius: 0.8rem;
+    padding: 1rem;
+    background-color: whitesmoke;
+    box-shadow: 0.2rem 0.2rem rgba(0,0,0,0.3);
+}
+
+p {
+    margin: 0 0 0.5rem 0;
+}
+
+footer {
+    padding: 2rem;
+    background-color: darkcyan;
+    color: cornsilk;
+}
+
+.quicklinks {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.quicklinks > dl {
+    padding: 0 1rem 1rem 0;
+}
+
+.quicklinks > dl > dt {
+    
+}
+
+.quicklinks > dl > dd {
+    
+}
