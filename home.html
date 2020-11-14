@@ -16,33 +16,102 @@
     <nav>
         <ul>
             <li>
-                <a href="#">search</a>
-            </li>
-            <li>
-                <a href="#">info</a>
-            </li>
-            <li>
                 <a href="#">account</a>
             </li>
             <li>
-                <a href="#">legal</a>
+                <a href="#">search</a>
+            </li>
+            <li>
+                <a href="#">catalog</a>
+            </li>
+            <li>
+                <a href="#">info</a>
             </li>
         </ul>
     </nav>
     <main>
         <section class="main">
-            <p>
+            <h1>
                 Welcome.
-            </p>
+            </h1>
             <p>
-                You've found your way to Boardwatch, the most hands-off way of finding video game merchandise on the secondhand market. If you're new here, head on over to our <a href="#">info section</a> to see how it works. Or start right away with a quick <a href="#">search</a>!
+                You've found your way to Boardwatch, the most hands-off way of finding video game merchandise on the online secondhand market. If you're new here, head on over to our <a href="#">info section</a> to see how it works. Or start right away with a quick <a href="#">search</a>!
             </p>
         </section>
         <section class="main">
-            1
+            <h1>Results</h1>
+            <ul class="search-results">
+                <li class="product-result">
+                    <img src="img.jpg" class="product">
+                    <section>
+                        <span>Super Nintendo</span>
+                        <span>1993</span>
+                    </section>
+                </li>
+                <li class="product-result">
+                    <img src="img.jpg" class="product">
+                    <section>
+                        <span>Nintendo 64</span>
+                        <span>2000</span>
+                    </section>
+                </li>
+                <li class="product-result">
+                    <img src="img.jpg" class="product">
+                    <section>
+                        <span>GameCube</span>
+                        <span>2004</span>
+                    </section>
+                </li>
+                <li class="product-result">
+                    <img src="img.jpg" class="product">
+                    <section>
+                        <span>Wii</span>
+                        <span>2008</span>
+                    </section>
+                </li>
+            </ul>
         </section>
         <section class="main">
-            1
+            <h1>Vague Product Results</h1>
+            <section class="searched-product-clarification">
+                <section class="query-display">
+                    <section class="result-type">
+                        <span>Listings for:</span>
+                    </section>
+                    <section class="searched-vague-platform">
+                        <img src="img.jpg">
+                        <section class="searched-vague-platform-details">
+                            <span>Gameboy Advance SP</span>
+                        </section>
+                    </section>
+                </section>
+                <section class="change-query-offer">
+                    <span>
+                        Wrong product? Change your search <a href="#">here</a>.
+                    </span>
+                </section>
+            </section>
+            <hr>
+        </section>
+        <section class="main">
+            <h1>Specific Product Results</h1>
+            <section class="searched-product-clarification">
+                <section class="query-display">
+                    <section class="result-type">
+                        <span>Listings for:</span>
+                    </section>
+                    <section class="searched-specific-platform">
+                        <img src="img.jpg">
+                        <span>Gameboy Advance SP</span>
+                    </section>
+                </section>
+                <section class="change-query-offer">
+                    <span>
+                        Wrong product? Change your search <a href="#">here</a>.
+                    </span>
+                </section>
+            </section>
+            <hr>
         </section>
     </main>
     <footer>
@@ -51,14 +120,16 @@
                 <dt>General</dt>
                 <dd><a href="#">FAQ</a></dd>
                 <dd><a href="#">Help</a></dd>
+                <dd><a href="#">Legal</a></dd>
             </dl>
             <dl>
-                <dt>Progress</dt>
-                <dd><a href="#">Development</a></dd>
+                <dt>Site Improvement</dt>
+                <dd><a href="https://github.com/nathanalexanderpage/boardwatch_app_web">Dev Log</a></dd>
+                <dd><a href="#">Report Issue</a></dd>
                 <dd><a href="#">Contribute</a></dd>
             </dl>
         </section>
-        <section>
+        <section class="copyright">
             &copy; 2020 nathanalexanderpage
         </section>
     </footer>    
