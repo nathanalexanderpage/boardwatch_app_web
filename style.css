@@ -48,6 +48,11 @@ section.main {
     box-shadow: 0.2rem 0.2rem rgba(0,0,0,0.3);
 }
 
+img {
+    /* TEMPORARY */
+    border: 1px solid rgb(165, 165, 165);
+}
+
 h1 {
     margin: 0.5rem 0 1rem;
 }
@@ -105,16 +110,24 @@ footer {
 .search-results {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
-ul.search-results > li.product-result {
+li.product-result {
     width: 100%;
     max-width: 25rem;
     margin: 1rem;
-    border-radius: 1rem;
+    border-left: 2px solid rgb(0, 85, 85);
+    border-right: 2px solid rgb(0, 85, 85);
+    border-radius: 0.6rem;
     padding: 0.8rem;
+    display: flex;
     background-color: rgba(256,256,256,0.5);
+}
+
+li.product-result:hover {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    box-shadow: 2px 0 black, -2px 0 black;
 }
 
 .product-result img.product {
@@ -151,26 +164,38 @@ ul.search-results > li.product-result {
     margin: auto;
 }
 
-.searched-vague-platform {
+.searched-platform {
     width: fit-content;
     height: auto;
     border: 1px solid rgba(0,0,0,0.2);
     border-radius: 0.3rem;
     padding: 0.5rem;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
     background-color: rgba(256,256,256,0.5);
 }
 
-.searched-vague-platform img {
-    width: 3rem;
-    height: 3rem;
+.searched-platform img {
+    width: auto;
+    height: 100%;
+    min-width: 3rem;
+    min-height: 3rem;
+    margin: auto;
 }
 
-.searched-vague-platform-details {
+.searched-platform-details {
     margin: auto;
     padding: 0.3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.searched-platform-details > span {
+    margin: 0.1rem 0;
+    font-size: 0.9rem;
 }
 
 .searched-specific-platform {
@@ -183,6 +208,10 @@ ul.search-results > li.product-result {
     grid-template-columns: auto auto;
     grid-template-rows: auto;
     background-color: rgba(256,256,256,0.5);
+}
+
+.searched-platform-details-name {
+    font-weight: 600;
 }
 
 .change-query-offer {
