@@ -110,6 +110,7 @@ footer {
 .search-results {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 li.product-result {
@@ -120,8 +121,17 @@ li.product-result {
     border-right: 2px solid rgb(0, 85, 85);
     border-radius: 0.6rem;
     padding: 0.8rem;
-    display: flex;
     background-color: rgba(256,256,256,0.5);
+}
+
+li.product-result > a {
+    display: flex;
+    color: black;
+    text-decoration-line: none;
+}
+
+li.product-result > a:hover {
+    text-shadow: 1px 1px rgb(255, 255, 255), -1px -1px rgb(255, 255, 255), -2px -2px rgb(255, 255, 255), 2px 2px rgb(255, 255, 255);
 }
 
 li.product-result:hover {
@@ -131,12 +141,32 @@ li.product-result:hover {
 }
 
 .product-result img.product {
-    width: 6rem;
-    height: 6rem;
+    width: 100%;
+    max-width: 5rem;
+    min-width: 3rem;
+    height: auto;
+    min-height:3rem;
+    margin: auto;
+}
+
+.product-image {
+    margin: auto 0;
 }
 
 .product-result img, .product-result span {
     display: block;
+}
+
+.platform-result-details {
+    padding: 1rem;
+}
+
+.platform-result-details > span {
+    margin: 0 0 0.3rem;
+}
+
+.platform-result-name {
+    font-size: 1.3rem;
 }
 
 .searched-product-clarification {
@@ -165,8 +195,6 @@ li.product-result:hover {
 }
 
 .searched-platform {
-    width: fit-content;
-    height: auto;
     border: 1px solid rgba(0,0,0,0.2);
     border-radius: 0.3rem;
     padding: 0.5rem;
@@ -179,8 +207,9 @@ li.product-result:hover {
 }
 
 .searched-platform img {
-    width: auto;
-    height: 100%;
+    width: 40%;
+    max-width: 4rem;
+    height: auto;
     min-width: 3rem;
     min-height: 3rem;
     margin: auto;
@@ -195,6 +224,7 @@ li.product-result:hover {
 
 .searched-platform-details > span {
     margin: 0.1rem 0;
+    display: block;
     font-size: 0.9rem;
 }
 
