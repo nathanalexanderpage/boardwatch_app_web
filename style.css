@@ -394,11 +394,13 @@ img.platform-edition-preview {
 }
 
 .pink {
+    border-color: rgb(116, 9, 59);
     color: rgb(255, 212, 232);
     background-color: rgb(255, 89, 167);
 }
 
 .red {
+    border-color: tomato;
     color: rgb(90, 0, 0);
     background-color: red;
 }
@@ -424,8 +426,9 @@ img.platform-edition-preview {
 }
 
 .blue {
+    border-color: rgb(52, 52, 170);
     color: rgb(0, 0, 78);
-    background-color: rgb(85, 85, 255);
+    background-color: rgb(85, 201, 255);
 }
 
 .navy {

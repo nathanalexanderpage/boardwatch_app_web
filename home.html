@@ -243,12 +243,13 @@
                             </fieldset>
                         </li>
                     </ul>
+                    <input type="submit" value="apply">
                 </form>
                 <ul class="platform-editions-preview">
                     <li class="platform-edition">
                         <section class="platform-edition-info-visual-universal">
                             <img src="img.jpg" class="platform-edition-preview">
-                            <span class="platform-edition-preview-color">blue</span>
+                            <span class="platform-edition-preview-color blue">blue</span>
                             <section class="platform-edition-preview-finish">
                                 <span class="platform-edition-preview-finish-matte">matte:</span>
                                 <span class="platform-edition-preview-finish-matte-datum boolean-false">no</span>
@@ -362,6 +363,23 @@
                     </li>
                 </ul>
             </section>
+        </section>
+        <section class="main">
+            <h1>Settings</h1>
+            <form action="" method="post">
+                <fieldset>
+                    <legend>notifications</legend>
+                    <fieldset>
+                        <legend>e-mail</legend>
+                        <label for="notification-email">send e-mail notifications</label>
+                        <input type="checkbox" name="notification-email">
+                        <label for="notification-email-frequency-mins">frequency</label>
+                        <span>send every</span>
+                        <input name="notification-email-frequency-mins" type="number">
+                        <span>minutes</span>
+                    </fieldset>
+                </fieldset>
+            </form>
         </section>
     </main>
     <footer>
