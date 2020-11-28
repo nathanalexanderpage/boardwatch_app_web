@@ -557,49 +557,42 @@ img.platform-edition-preview {
     border-color: black;
     color: white;
     background-color: black;
-
 }
 
 .grey {
     border-color: rgb(85, 85, 85);
     color: white;
     background-color: rgb(99, 99, 99);
-
 }
 
 .white {
     border-color: rgb(34, 42, 63);
     color: rgb(26, 33, 51);
     background-color: white;
-
 }
 
 .off-white {
     border-color: rgb(148, 148, 140);
     color: rgb(92, 92, 72);
     background-color: rgb(241, 241, 229);
-
 }
 
 .brown {
     border-color: rgb(68, 39, 39);
     color: rgb(228, 217, 217);
     background-color: rgb(131, 40, 40);
-
 }
 
 .gold {
     border-color: rgb(155, 124, 46);
     color: rgb(80, 61, 14);
     background-color: gold;
-
 }
 
 .silver {
     border-color: rgb(112, 112, 112);
     color: rgb(58, 58, 58);
     background-color: silver;
-
 }
 
 .platform-edition-preview-finish {
@@ -695,6 +688,20 @@ img.platform-edition-preview {
 
 li .platform-edition-actions > a {
     display: block;
+}
+
+.see-all {
+    width: 55vw;
+    margin: auto;
+    padding: 1.5rem;
+    display: block;
+    background-color: rgba(256,256,256,0.5);
+    text-align: center;
+}
+
+.see-all:hover {
+    display: block;
+    background-color: rgba(256,256,256,0.7);
 }
 
 .copyright {
