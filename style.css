@@ -377,6 +377,29 @@ li.listing {
     grid-area: source;
 }
 
+.platform-generic-info {
+    width: 70vw;
+    max-width: 60rem;
+    margin: auto;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto auto auto 1fr;
+    grid-template-areas:
+        "pic year"
+        "pic gen"
+        "pic family"
+        "pic namegroup"
+        "pic description"
+        "disambig disambig";
+    background-color: coral;
+}
+
+.platform-generic-info > img {
+    grid-area: pic;
+}
+
 form.filter {
     width: 60vw;
     min-width: 20rem;
