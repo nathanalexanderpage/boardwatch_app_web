@@ -245,6 +245,10 @@ li.product-result:hover {
     margin: auto;
 }
 
+.searched-platform > hr {
+    margin: 0.5rem;
+}
+
 .searched-platform-details {
     margin: auto;
     padding: 0.3rem;
