@@ -426,7 +426,19 @@ ul.platform-editions-preview {
 li.platform-edition {
     margin: 1rem;
     padding: 0.6rem;
-    background-color: rgba(256,256,256,0.5);
+    background-color: rgba(256,256,256,0.6);
+}
+
+li.platform-edition:hover {
+    background-color: rgba(256,256,256,0.9);
+}
+
+li.platform-edition:hover a {
+    color: rgb(224, 0, 0);
+}
+
+li.platform-edition a:hover {
+    color: darkslateblue;
 }
 
 .platform-edition-info-visual-universal {
