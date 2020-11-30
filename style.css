@@ -388,20 +388,51 @@ li.listing {
     border-radius: 1.5rem;
     padding: 2rem;
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto auto 1fr;
     grid-template-rows: auto auto auto auto 1fr;
     grid-template-areas:
-        "pic year"
-        "pic gen"
-        "pic family"
-        "pic namegroup"
-        "pic description"
-        "disambig disambig";
+        "pic year-title year"
+        "pic gen-title gen"
+        "pic family-title family"
+        "pic namegroup-title namegroup"
+        "pic description description";
     background-color: coral;
 }
 
 .platform-generic-info > img {
     grid-area: pic;
+}
+
+.platform-generic-info > .year {
+    grid-area: year;
+}
+
+.platform-generic-info > .year-title {
+    grid-area: year-title;
+}
+
+.platform-generic-info > .generation {
+    grid-area: gen;
+}
+
+.platform-generic-info > .generation-title {
+    grid-area: gen-title;
+}
+
+.platform-generic-info > .platform-family {
+    grid-area: family;
+}
+
+.platform-generic-info > .platform-family-title {
+    grid-area: family-title;
+}
+
+.platform-generic-info > .platform-name-family {
+    grid-area: namegroup;
+}
+
+.platform-generic-info > .description {
+    grid-area: description;
 }
 
 form.filter {
