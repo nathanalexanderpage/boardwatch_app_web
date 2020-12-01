@@ -400,7 +400,12 @@ li.listing {
 }
 
 .platform-generic-info > img {
+    width: 20rem;
     grid-area: pic;
+}
+
+.platform-generic-info .data {
+    padding: 0.15rem;
 }
 
 .platform-generic-info > .year {
@@ -432,6 +437,7 @@ li.listing {
 }
 
 .platform-generic-info > .description {
+    padding: 0.15rem;
     grid-area: description;
 }
 
@@ -772,6 +778,84 @@ li .platform-edition-actions > a {
 .see-all:hover {
     display: block;
     background-color: rgba(256,256,256,0.7);
+}
+
+.product-specific-info {
+    width: 70vw;
+    max-width: 60rem;
+    margin: auto;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto 1fr;
+    grid-template-areas:
+        "pic model-no-title model-no"
+        "pic storage-title storage"
+        "pic color-title color"
+        "pic official-color-title official-color"
+        "pic texture-title texture"
+        "pic platform-family-title platform-family"
+        "pic platform-name-family-title platform-name-family"
+        "pic description description";
+    background-color: coral;
+}
+
+.product-specific-info > img {
+    width: 20rem;
+    grid-area: pic;
+}
+
+.product-specific-info .data {
+    padding: 0.15rem;
+}
+
+.product-specific-info > .model-no-title {
+    grid-area: model-no-title;
+}
+
+.product-specific-info > .model-no {
+    grid-area: model-no;
+}
+
+.product-specific-info > .storage-title {
+    grid-area: storage-title;
+}
+
+.product-specific-info > .storage {
+    grid-area: storage;
+}
+
+.product-specific-info > .color-title {
+    grid-area: color-title;
+}
+
+.product-specific-info > .color {
+    grid-area: color;
+}
+
+.product-specific-info > .official-color-title {
+    grid-area: official-color-title;
+}
+
+.product-specific-info > .official-color {
+    grid-area: official-color;
+}
+
+.product-specific-info > .texture-title {
+    grid-area: texture-title;
+}
+
+.product-specific-info > .texture {
+    grid-area: texture;
+}
+
+.product-specific-info > .description-title {
+    grid-area: description-title;
+}
+
+.product-specific-info > .description {
+    grid-area: description;
 }
 
 .copyright {
