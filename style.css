@@ -532,11 +532,12 @@ img.platform-edition-preview {
 
 /* invisible; screenreader-accessible */
 .platform-edition-preview-color-title {
-    position: absolute !important;
-    height: 1px; width: 1px; 
+    width: 1px; 
+    height: 1px;
     overflow: hidden;
     clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
     clip: rect(1px, 1px, 1px, 1px);
+    clip-path: circle(1px at 0% 0%);
 }
 
 .pink {
