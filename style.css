@@ -24,9 +24,12 @@ nav {
 }
 
 nav > ul {
+    width: 90vw;
+    max-width: 110rem;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 nav > ul > li > a {
@@ -36,8 +39,13 @@ nav > ul > li > a {
     text-decoration-line: none;
 }
 
-nav > ul > li > a:hover {
+nav > ul > li > a {
+    text-decoration-line: underline;
     background-color: teal;
+}
+
+nav > ul > li > a:hover {
+    background-color: rgb(0, 105, 105);
 }
 
 main {
@@ -396,11 +404,12 @@ li.listing {
         "pic family-title family"
         "pic namegroup-title namegroup"
         "pic description description";
-    background-color: coral;
+    background-color: rgba(256,256,256,0.5);
 }
 
 .platform-generic-info > img {
     width: 20rem;
+    margin-right: 2rem;
     grid-area: pic;
 }
 
@@ -656,7 +665,7 @@ img.platform-edition-preview {
 .brown {
     border-color: rgb(68, 39, 39);
     color: rgb(228, 217, 217);
-    background-color: rgb(131, 40, 40);
+    background-color: rgb(107, 45, 45);
 }
 
 .gold {
@@ -798,11 +807,12 @@ li .platform-edition-actions > a {
         "pic platform-family-title platform-family"
         "pic platform-name-family-title platform-name-family"
         "pic description description";
-    background-color: coral;
+    background-color: rgba(256,256,256,0.5);
 }
 
 .product-specific-info > img {
     width: 20rem;
+    margin-right: 2rem;
     grid-area: pic;
 }
 
@@ -855,7 +865,22 @@ li .platform-edition-actions > a {
 }
 
 .product-specific-info > .description {
+    padding: 0.15rem;
     grid-area: description;
+}
+
+ul.compatible-games {
+    max-width: 40rem;
+    margin: 0 auto;
+    border-radius: 0.6rem;
+    padding: 2rem;
+    background-color: rgba(256,256,256,0.5);
+}
+
+ul.compatible-games > li {
+    margin-bottom: 0.3rem;
+    margin-left: 1rem;
+    list-style: disc;
 }
 
 .copyright {
