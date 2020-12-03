@@ -534,6 +534,15 @@ img.platform-edition-preview {
     font-weight: bold;
 }
 
+/* invisible; screenreader-accessible */
+.platform-edition-preview-color-title {
+    position: absolute !important;
+    height: 1px; width: 1px; 
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
 .pink {
     border-color: rgb(165, 13, 84);
     color: rgb(255, 239, 247);
