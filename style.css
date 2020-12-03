@@ -527,10 +527,6 @@ img.platform-edition-preview {
     position: absolute;
     right: 0;
     top: 0;
-
-    /* TEMP */
-    color: white;
-    background-color: darkblue;
     font-weight: bold;
 }
 
