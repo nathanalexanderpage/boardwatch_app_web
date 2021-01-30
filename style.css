@@ -147,15 +147,18 @@ footer > section {
     width: 70vw;
     max-width: 85rem;
     margin: auto;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 22rem);
     justify-content: center;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    justify-content: center;
+    justify-items: center;
 }
 
 li.product-result {
     width: 100%;
     max-width: 25rem;
-    margin: 1rem;
     border-left: 2px solid rgb(0, 85, 85);
     border-right: 2px solid rgb(0, 85, 85);
     border-radius: 0.6rem;
