@@ -617,6 +617,12 @@ img.platform-edition-preview {
         1px 1px rgb(255, 191, 191);
 }
 
+.rainbow > span::selection {
+    color: white;
+    background-color: rgb(42, 0, 156);
+    text-shadow: none;
+}
+
 .rainbow > span:nth-child(7n+2) {
     color: rgb(196, 108, 0);
     text-shadow:
@@ -747,6 +753,12 @@ img.platform-edition-preview {
         2px 0 white,
         -2px 0 white,
         0 -2px white;
+}
+
+.platform-edition-preview-finish > span::selection {
+    color: white;
+    background-color: rgb(42, 0, 156);
+    text-shadow: none;
 }
 
 .platform-edition-preview-finish > span.boolean-false {
