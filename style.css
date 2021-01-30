@@ -464,14 +464,15 @@ form.filter {
 ul.platform-editions-preview {
     width: 84vw;
     max-width: 100rem;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 22rem);
     justify-content: center;
+    column-gap: 2rem;
+    row-gap: 2rem;
 }
 
 li.platform-edition {
-    margin: 1rem;
     padding: 0.6rem;
     background-color: rgba(256,256,256,0.6);
 }
@@ -506,8 +507,14 @@ li .platform-edition-actions > a {
 }
 
 .platform-edition-info-visual-universal {
-    max-width: 20rem;
-    max-height: 20rem;
+    max-width: 100%;
+    max-height: 20.8rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
     position: relative;
     background-color: black;
 }
