@@ -465,9 +465,8 @@ form.filter {
 }
 
 ul.platform-editions-preview {
-    width: 84vw;
     max-width: 100rem;
-    margin: 1rem auto;
+    margin: 2rem auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, 22rem);
     justify-content: center;
@@ -794,6 +793,7 @@ img.platform-edition-preview {
 
 .see-all {
     width: 55vw;
+    max-width: 1000px;
     margin: auto;
     padding: 1.5rem;
     display: block;
