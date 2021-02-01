@@ -1,0 +1,920 @@
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header {
+    background-color: aquamarine;
+}
+
+header > section {
+    width: 90vw;
+    max-width: 110rem;
+    margin: 0.8rem auto 0.8rem;
+}
+
+nav {
+    background-color: darkcyan;
+}
+
+nav > ul {
+    width: 90vw;
+    max-width: 110rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+}
+
+nav > ul > li > a {
+    display: block;
+    padding: 1.5rem;
+    color: cornsilk;
+    text-decoration-line: none;
+}
+
+nav > ul > li > a {
+    text-decoration-line: underline;
+    background-color: teal;
+}
+
+nav > ul > li > a:hover {
+    background-color: rgb(0, 105, 105);
+}
+
+main {
+    height: 100%;
+    background-color: cadetblue;
+    flex-grow: 1;
+}
+
+section.main {
+    width: 90vw;
+    max-width: 110rem;
+    margin: 1.3rem auto 1.7rem;
+    border-radius: 0.4rem;
+    padding: 1.7rem;
+    background-color: rgba(256,256,256,0.7);
+    box-shadow: 0.2rem 0.2rem rgba(0,0,0,0.3);
+}
+
+img {
+    /* TEMPORARY */
+    max-width: 30rem;
+    border: 1px solid rgb(165, 165, 165);
+}
+
+h1 {
+    margin: 0.5rem 0 1rem;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+h2 {
+    margin: 1rem auto 1.5rem;
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+p, aside {
+    max-width: 70rem;
+    margin: 0 auto 0.5rem;
+    line-height: 1.2;
+}
+
+form fieldset {
+    margin: 0.5rem 0;
+}
+
+a {
+    color: #6c7200;
+}
+
+/* a[target="_blank"]::after {
+    content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
+    margin: 0 3px 0 5px;
+} */
+
+p > a:hover, aside > a:hover {
+    text-shadow: 1px 1px whitesmoke;
+}
+
+footer {
+    padding: 2rem 0 2rem;
+    background-color: darkcyan;
+    color: cornsilk;
+}
+
+footer > section {
+    width: 90vw;
+    max-width: 110rem;
+    margin: auto;
+}
+
+.quicklinks {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.quicklinks > dl {
+    padding: 0 2rem 2rem 0;
+}
+
+.quicklinks > dl > dt {
+    color: white;
+    font-weight: bold;
+}
+
+.quicklinks > dl > dd > a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    line-height: 1.5;
+    color: cornsilk;
+    text-decoration-line: none;
+}
+
+.quicklinks > dl > dd:hover {
+    text-decoration-line: underline;
+}
+
+.search-results {
+    width: 70vw;
+    max-width: 85rem;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 22rem);
+    justify-content: center;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    justify-content: center;
+    justify-items: center;
+}
+
+li.product-result {
+    width: 100%;
+    max-width: 25rem;
+    border-left: 2px solid rgb(0, 85, 85);
+    border-right: 2px solid rgb(0, 85, 85);
+    border-radius: 0.6rem;
+    padding: 0.8rem;
+    background-color: rgba(256,256,256,0.5);
+}
+
+li.product-result > a {
+    display: flex;
+    color: black;
+    text-decoration-line: none;
+}
+
+li.product-result > a:hover {
+    text-shadow: 1px 1px rgb(255, 255, 255), -1px -1px rgb(255, 255, 255), -2px -2px rgb(255, 255, 255), 2px 2px rgb(255, 255, 255);
+}
+
+li.product-result:hover {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    box-shadow: 2px 0 black, -2px 0 black;
+}
+
+.product-result img.product {
+    width: 100%;
+    max-width: 5rem;
+    min-width: 3rem;
+    height: auto;
+    min-height:3rem;
+    margin: auto;
+}
+
+.product-image {
+    margin: auto 0;
+}
+
+.product-result img, .product-result span {
+    display: block;
+}
+
+.platform-result-details {
+    padding: 1rem;
+}
+
+.platform-result-details > span {
+    margin: 0 0 0.3rem;
+}
+
+.platform-result-name {
+    font-size: 1.3rem;
+}
+
+.searched-product-clarification {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.query-display {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.result-type {
+    padding: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.result-type > span {
+    margin: auto;
+}
+
+.searched-platform {
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    background-color: rgba(256,256,256,0.5);
+}
+
+.searched-platform img {
+    width: 40%;
+    max-width: 4rem;
+    height: auto;
+    min-width: 3rem;
+    min-height: 3rem;
+    margin: auto;
+}
+
+.searched-platform > hr {
+    margin: 0.5rem;
+}
+
+.searched-platform-details {
+    margin: auto;
+    padding: 0.3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.searched-platform-details > span {
+    margin: 0.1rem 0;
+    display: block;
+    font-size: 0.9rem;
+}
+
+.searched-specific-platform {
+    width: fit-content;
+    height: auto;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    background-color: rgba(256,256,256,0.5);
+}
+
+.searched-platform-details-name {
+    font-weight: 600;
+}
+
+.change-query-offer {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+ul.listings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+li.listing {
+    max-width: 70rem;
+    margin: 2rem 8px;
+    display: flex;
+    background-color: rgba(256,256,256,0.6);
+}
+
+.listing:hover {
+    box-shadow: -8px 0 rgb(0, 85, 85);
+    background-color: rgba(256,256,256,0.8);
+}
+
+.listing > section {
+    margin: 0.5rem;
+}
+
+.listing-img {
+    width: 8rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.listing-img-main img {
+    width: 8rem;
+}
+
+.listing-img-additional {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.listing-img-additional img {
+    width: 25%;
+}
+
+.listing-img-additional img:hover {
+    border: 2px solid gold;
+}
+
+.listing-details {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto 1fr 1fr auto;
+    grid-template-areas:
+        "title title"
+        "body body"
+        "price price"
+        "go go"
+        "date source";
+}
+
+.listing-title {
+    grid-area: title;
+    font-size: 1.3rem;
+}
+
+.listing-price {
+    grid-area: price;
+    margin: auto 0;
+}
+
+.listing-body {
+    grid-area: body;
+}
+
+.listing-go {
+    grid-area: go;
+}
+
+.listing-go button {
+    border-color: rgb(0, 167, 167);
+    color: cornsilk;
+    background-color: rgb(29, 37, 37);
+}
+
+.listing-go button:hover {
+    border-color: rgb(0, 190, 190);
+    color: whitesmoke;
+    background-color: rgb(26, 58, 58);
+}
+
+.listing-date {
+    grid-area: date;
+}
+
+.listing-source {
+    grid-area: source;
+}
+
+.platform-generic-info {
+    width: 70vw;
+    max-width: 60rem;
+    margin: auto;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    grid-template-rows: auto auto auto auto 1fr;
+    grid-template-areas:
+        "pic year-title year"
+        "pic gen-title gen"
+        "pic family-title family"
+        "pic namegroup-title namegroup"
+        "pic description description";
+    background-color: rgba(256,256,256,0.5);
+}
+
+.platform-generic-info > img {
+    width: 20rem;
+    margin-right: 2rem;
+    grid-area: pic;
+}
+
+.platform-generic-info .data {
+    padding: 0.15rem;
+}
+
+.platform-generic-info > .year {
+    grid-area: year;
+}
+
+.platform-generic-info > .year-title {
+    grid-area: year-title;
+}
+
+.platform-generic-info > .generation {
+    grid-area: gen;
+}
+
+.platform-generic-info > .generation-title {
+    grid-area: gen-title;
+}
+
+.platform-generic-info > .platform-family {
+    grid-area: family;
+}
+
+.platform-generic-info > .platform-family-title {
+    grid-area: family-title;
+}
+
+.platform-generic-info > .platform-name-family {
+    grid-area: namegroup;
+}
+
+.platform-generic-info > .description {
+    padding: 0.15rem;
+    grid-area: description;
+}
+
+form.filter {
+    width: 60vw;
+    min-width: 20rem;
+    max-width: 60rem;
+    margin: auto;
+    border: 0.5rem groove rgb(134, 184, 184);
+    padding: 1rem;
+    background-color: rgb(200, 230, 230);
+}
+
+ul.platform-editions-preview {
+    max-width: 100rem;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 22rem);
+    justify-content: center;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+li.platform-edition {
+    padding: 0.6rem;
+    background-color: rgba(256,256,256,0.6);
+}
+
+li.platform-edition:hover {
+    background-color: rgba(256,256,256,0.9);
+}
+
+li.platform-edition:hover a {
+    color: rgb(224, 0, 0);
+}
+
+li.platform-edition a:hover {
+    color: darkslateblue;
+}
+
+.platform-edition-info-other {
+    padding: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto auto;
+}
+
+.platform-edition-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+li .platform-edition-actions > a {
+    display: block;
+}
+
+.platform-edition-info-visual-universal {
+    max-width: 100%;
+    max-height: 20.8rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    background-color: black;
+}
+
+li.platform-edition > span {
+    display: block;
+}
+
+img.platform-edition-preview {
+    width: 100%;
+    height: auto;
+}
+
+.platform-edition-preview-color {
+    border: 2px solid black;
+    padding: 0.4rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-weight: bold;
+}
+
+/* invisible; screenreader-accessible */
+.platform-edition-preview-color-title {
+    width: 1px; 
+    height: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: circle(1px at 0% 0%);
+}
+
+.pink {
+    border-color: rgb(165, 13, 84);
+    color: rgb(255, 239, 247);
+    background-color: rgb(255, 89, 167);
+}
+
+.red {
+    border-color: rgb(177, 0, 0);
+    color: rgb(255, 212, 212);
+    background-color: rgb(233, 0, 0);
+}
+
+.orange {
+    border-color: rgb(172, 94, 0);
+    color: rgb(255, 246, 230);
+    background-color: rgb(231, 127, 0);
+}
+
+.yellow {
+    border-color: rgb(224, 209, 0);
+    color: rgb(129, 121, 0);
+    background-color: rgb(255, 255, 100);
+}
+
+.green {
+    border-color: rgb(0, 136, 0);
+    color: rgb(0, 80, 0);
+    background-color: rgb(63, 204, 63);
+}
+
+.mint {
+    border-color: rgb(68, 122, 104);
+    color: rgb(33, 63, 53);
+    background-color: rgb(108, 224, 186);
+}
+
+.blue {
+    border-color: rgb(52, 89, 170);
+    color: rgb(0, 0, 78);
+    background-color: rgb(37, 186, 255);
+}
+
+.navy {
+    border-color: navy;
+    color: rgb(224, 224, 255);
+    background-color: rgb(26, 26, 177);
+}
+
+.purple {
+    border-color: rgb(53, 0, 151);
+    color: rgb(239, 233, 255);
+    background-color: rgb(110, 57, 255);
+}
+
+.rainbow {
+    display: inline-flex;
+    background-color: rgb(253, 253, 253);
+}
+
+.rainbow > span {
+    color: rgb(170, 0, 0);
+    text-shadow:
+        -1px -1px rgb(255, 191, 191),
+        -1px 1px rgb(255, 191, 191),
+        1px -1px rgb(255, 191, 191),
+        1px 1px rgb(255, 191, 191);
+}
+
+.rainbow > span::selection {
+    color: white;
+    background-color: rgb(42, 0, 156);
+    text-shadow: none;
+}
+
+.rainbow > span:nth-child(7n+2) {
+    color: rgb(196, 108, 0);
+    text-shadow:
+        -1px -1px rgb(253, 212, 150),
+        -1px 1px rgb(253, 212, 150),
+        1px -1px rgb(253, 212, 150),
+        1px 1px rgb(253, 212, 150);
+}
+
+.rainbow > span:nth-child(7n+3) {
+    color: rgb(168, 143, 0);
+    text-shadow:
+        -1px -1px yellow,
+        -1px 1px yellow,
+        1px -1px yellow,
+        1px 1px yellow;
+}
+
+.rainbow > span:nth-child(7n+4) {
+    color: rgb(106, 148, 43);
+    text-shadow:
+        -1px -1px greenyellow,
+        -1px 1px greenyellow,
+        1px -1px greenyellow,
+        1px 1px greenyellow;
+}
+
+.rainbow > span:nth-child(7n+5) {
+    color: green;
+    text-shadow:
+        -1px -1px rgb(136, 255, 136),
+        -1px 1px rgb(136, 255, 136),
+        1px -1px rgb(136, 255, 136),
+        1px 1px rgb(136, 255, 136);
+}
+
+.rainbow > span:nth-child(7n+6) {
+    color: rgb(0, 75, 236);
+    text-shadow:
+        -1px -1px rgb(171, 208, 255),
+        -1px 1px rgb(171, 208, 255),
+        1px -1px rgb(171, 208, 255),
+        1px 1px rgb(171, 208, 255);
+}
+
+.rainbow > span:nth-child(7n+7) {
+    color: rgb(118, 0, 187);
+    text-shadow:
+        -1px -1px rgb(230, 188, 255),
+        -1px 1px rgb(230, 188, 255),
+        1px -1px rgb(230, 188, 255),
+        1px 1px rgb(230, 188, 255);
+}
+
+.black {
+    border-color: black;
+    color: white;
+    background-color: black;
+}
+
+.grey {
+    border-color: rgb(85, 85, 85);
+    color: white;
+    background-color: rgb(99, 99, 99);
+}
+
+.white {
+    border-color: rgb(34, 42, 63);
+    color: rgb(26, 33, 51);
+    background-color: white;
+}
+
+.off-white {
+    border-color: rgb(148, 148, 140);
+    color: rgb(92, 92, 72);
+    background-color: rgb(241, 241, 229);
+}
+
+.brown {
+    border-color: rgb(68, 39, 39);
+    color: rgb(228, 217, 217);
+    background-color: rgb(107, 45, 45);
+}
+
+.gold {
+    border-color: rgb(155, 124, 46);
+    color: rgb(80, 61, 14);
+    background-color: gold;
+}
+
+.silver {
+    border-color: rgb(112, 112, 112);
+    color: rgb(58, 58, 58);
+    background-color: silver;
+}
+
+.platform-edition-preview-finish {
+    border-top: 1px solid rgba(0,0,0,0.3);
+    border-left: 1px solid rgba(0,0,0,0.3);
+    padding: 0.4rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto auto;
+    column-gap: 0.3rem;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.platform-edition-preview-finish > span {
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+    text-shadow: 
+        1px 1px white,
+        -1px -1px white,
+        -1px 1px white,
+        1px -1px white,
+        1px 0 white,
+        0 1px white,
+        -1px 0 white,
+        0 -1px white,
+        2px 2px white,
+        -2px -2px white,
+        -2px 2px white,
+        2px -2px white,
+        0 2px white,
+        2px 0 white,
+        -2px 0 white,
+        0 -2px white;
+}
+
+.platform-edition-preview-finish > span::selection {
+    color: white;
+    background-color: rgb(42, 0, 156);
+    text-shadow: none;
+}
+
+.platform-edition-preview-finish > span.boolean-false {
+    color: rgb(255, 233, 233);
+    text-shadow:
+        1px 1px rgb(170, 0, 0),
+        -1px -1px rgb(170, 0, 0),
+        -1px 1px rgb(170, 0, 0),
+        1px -1px rgb(170, 0, 0),
+        1px 0 rgb(170, 0, 0),
+        0 1px rgb(170, 0, 0),
+        -1px 0 rgb(170, 0, 0),
+        0 -1px rgb(170, 0, 0),
+        2px 2px rgb(170, 0, 0),
+        -2px -2px rgb(170, 0, 0),
+        -2px 2px rgb(170, 0, 0),
+        2px -2px rgb(170, 0, 0),
+        0 2px rgb(170, 0, 0),
+        2px 0 rgb(170, 0, 0),
+        -2px 0 rgb(170, 0, 0),
+        0 -2px rgb(170, 0, 0);
+}
+
+.platform-edition-preview-finish > span.boolean-true {
+    color: rgb(226, 255, 226);
+    text-shadow:
+        1px 1px rgb(4, 129, 0),
+        -1px -1px rgb(4, 129, 0),
+        -1px 1px rgb(4, 129, 0),
+        1px -1px rgb(4, 129, 0),
+        1px 0 rgb(4, 129, 0),
+        0 1px rgb(4, 129, 0),
+        -1px 0 rgb(4, 129, 0),
+        0 -1px rgb(4, 129, 0),
+        2px 2px rgb(4, 129, 0),
+        -2px -2px rgb(4, 129, 0),
+        -2px 2px rgb(4, 129, 0),
+        2px -2px rgb(4, 129, 0),
+        0 2px rgb(4, 129, 0),
+        2px 0 rgb(4, 129, 0),
+        -2px 0 rgb(4, 129, 0),
+        0 -2px rgb(4, 129, 0);
+}
+
+.see-all {
+    width: 55vw;
+    max-width: 1000px;
+    margin: auto;
+    padding: 1.5rem;
+    display: block;
+    background-color: rgba(256,256,256,0.5);
+    text-align: center;
+}
+
+.see-all:hover {
+    display: block;
+    background-color: rgba(256,256,256,0.7);
+    /* FIXME */
+}
+
+.product-specific-info {
+    width: 70vw;
+    max-width: 60rem;
+    margin: auto;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto 1fr;
+    grid-template-areas:
+        "pic model-no-title model-no"
+        "pic storage-title storage"
+        "pic color-title color"
+        "pic official-color-title official-color"
+        "pic texture-title texture"
+        "pic platform-family-title platform-family"
+        "pic platform-name-family-title platform-name-family"
+        "pic description description";
+    background-color: rgba(256,256,256,0.5);
+}
+
+.product-specific-info > img {
+    width: 20rem;
+    margin-right: 2rem;
+    grid-area: pic;
+}
+
+.product-specific-info .data {
+    padding: 0.15rem;
+}
+
+.product-specific-info > .model-no-title {
+    grid-area: model-no-title;
+}
+
+.product-specific-info > .model-no {
+    grid-area: model-no;
+}
+
+.product-specific-info > .storage-title {
+    grid-area: storage-title;
+}
+
+.product-specific-info > .storage {
+    grid-area: storage;
+}
+
+.product-specific-info > .color-title {
+    grid-area: color-title;
+}
+
+.product-specific-info > .color {
+    grid-area: color;
+}
+
+.product-specific-info > .official-color-title {
+    grid-area: official-color-title;
+}
+
+.product-specific-info > .official-color {
+    grid-area: official-color;
+}
+
+.product-specific-info > .texture-title {
+    grid-area: texture-title;
+}
+
+.product-specific-info > .texture {
+    grid-area: texture;
+}
+
+.product-specific-info > .description-title {
+    grid-area: description-title;
+}
+
+.product-specific-info > .description {
+    padding: 0.15rem;
+    grid-area: description;
+}
+
+ul.compatible-games {
+    max-width: 40rem;
+    margin: 0 auto;
+    border-radius: 0.6rem;
+    padding: 2rem;
+    background-color: rgba(256,256,256,0.5);
+}
+
+ul.compatible-games > li {
+    margin-bottom: 0.3rem;
+    margin-left: 1rem;
+    list-style: disc;
+}
+
+.copyright {
+    font-size: 0.85rem;
+    color: white;
+}

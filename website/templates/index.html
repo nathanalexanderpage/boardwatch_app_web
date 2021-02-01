@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block nav %}
+	{% for navitem in nav: %}
+	<li>
+		<a href="{{ navitem.url }}">{{ navitem.name }}</a>
+	</li>
+	{% endfor %}
+{% endblock %}
+
+{% block content %}
+	<section class="main">
+		<h1>
+			Welcome.
+		</h1>
+		<p>
+			You've found your way to Boardwatch, the most hands-off way of finding video game merchandise on the online secondhand market. If you're new here, head on over to our <a href="#">info section</a> to see how it works. Or start right away with a quick <a href="#">search</a>!
+		</p>
+	</section>
+{% endblock %}

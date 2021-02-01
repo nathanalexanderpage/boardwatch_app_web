@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{{ url_for('static', filename='reset.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+	<title>{{ title }}</title>
+</head>
+<body>
+	<header>
+		<section>
+			&hearts; boardwatch
+		</section>
+	</header>
+	<nav>
+		<ul>
+			{% block nav %}{% endblock %}
+		</ul>
+	</nav>
+	<main>
+		{% block content %}{% endblock %}
+	</main>
+	<footer>
+		<section class="quicklinks">
+			<dl>
+				<dt>General</dt>
+				<dd><a href="#">FAQ</a></dd>
+				<dd><a href="#">Help</a></dd>
+				<dd><a href="#">Legal</a></dd>
+			</dl>
+			<dl>
+				<dt>Site Improvement</dt>
+				<dd><a href="https://github.com/nathanalexanderpage/boardwatch_app_web">Dev Log</a></dd>
+				<dd><a href="#">Report Issue</a></dd>
+				<dd><a href="#">Contribute</a></dd>
+			</dl>
+		</section>
+		<section class="copyright">
+			&copy; 2020 nathanalexanderpage
+		</section>
+	</footer>    
+</body>
+</html>
