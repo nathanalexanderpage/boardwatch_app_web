@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="main">
+	<h1>{{ platform.name }}</h1>
+	<h2>Product info</h2>
+	<section class="platform-generic-info">
+		<img src="{{ url_for('static', filename='assets/img.jpg') }}">
+		<span class="data year-title">debut year:</span>
+		<span class="data year">{{ platform.year }}</span>
+		<span class="data generation-title">generation:</span>
+		<span class="data generation">{{ platform.generation }}</span>
+		<span class="data platform-family-title">platform family:</span>
+		<span class="data platform-family">(under construction)</span>
+		<span class="data platform-name-family-title">name family:</span>
+		<span class="data platform-name-family">(under construction)</span>
+		{% if platform.description is not none %}
+		<p class="description">{{ platform.description }}</p>
+		{% endif %}
+	</section>
+	<h2>Editions</h2>
+	<section>
+		<form id="edition-filter" class="filter">
+			<span>Info to display:</span>
+			<ul class="edition-info-options">
+				<li>
+					<input title="edition-color" type="checkbox"><label for="edition-color">color</label>
+				</li>
+				<li>
+					<input title="edition-color-official" type="checkbox"><label for="edition-color-official">color (official)</label>
+				</li>
+				<li>
+					<input title="edition-model-no" type="checkbox"><label for="edition-model-no">model no.</label>
+				</li>
+				<li>
+					<input title="edition-storage" type="checkbox"><label for="edition-storage">internal storage</label>
+				</li>
+				<li>
+					<fieldset form="edition-filter" name="finish">
+						<legend>finish</legend>
+						<input title="edition-matte" type="checkbox"><label for="edition-matte">matte</label>
+						<input title="edition-transparency" type="checkbox"><label for="edition-transparency">transparency</label>
+						<input title="edition-gloss" type="checkbox"><label for="edition-gloss">gloss</label>
+					</fieldset>
+				</li>
+			</ul>
+			<input type="submit" value="apply">
+		</form>
+		<ul class="platform-editions-preview">
+			{% for edition in platform.editions: %}
+			<li class="platform-edition">
+				<section class="platform-edition-info-visual-universal">
+					<img src="{% if edition.image_url is not none %}{{ edition.image_url }}{% else %}http://placekitten.com/600/600{% endif %}" class="platform-edition-preview">
+					<span class="platform-edition-preview-color-title">color:</span>
+					{% for color in edition.colors %}
+					<span class="platform-edition-preview-color {{ color }}">{{ color }}</span>
+					{% endfor %}
+					<section class="platform-edition-preview-finish">
+						<span class="platform-edition-preview-finish-matte">matte:</span>
+						<span class="platform-edition-preview-finish-matte-datum boolean-{% if edition.has_matte %}true{% else: %}false{% endif %}">{% if edition.has_matte %}yes{% else: %}no{% endif %}</span>
+						<span class="platform-edition-preview-finish-transparency">transparency:</span>
+						<span class="platform-edition-preview-finish-transparency-datum boolean-{% if edition.has_transparency %}true{% else: %}false{% endif %}">{% if edition.has_transparency %}yes{% else: %}no{% endif %}</span>
+						<span class="platform-edition-preview-finish-gloss">gloss:</span>
+						<span class="platform-edition-preview-finish-gloss-datum boolean-{% if edition.has_gloss %}true{% else %}false{% endif %}">{% if edition.has_gloss %}yes{% else: %}no{% endif %}</span>
+					</section>
+				</section>
+				<section class="platform-edition-info-other">
+					<span>official color:</span>
+					<span class="platform-edition-color-official">{{ edition.official_color }}</span>
+					<span>model no:</span>
+					<span>{{ edition.model_no }}</span>
+					<span>internal storage:</span>
+					<span>{{ edition.storage }}</span>
+				</section>
+				<section class="platform-edition-actions">
+					<a href="#">To page</a>
+					<form action="">
+						<input value="Watch" type="submit">
+					</form>
+				</section>
+			</li>
+			{% endfor %}
+		</ul>
+		<a href="#" class="see-all">See all</a>
+	</section>
+</section>
+{% endblock %}

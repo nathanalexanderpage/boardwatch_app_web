@@ -1,13 +1,5 @@
 {% extends 'base.html' %}
 
-{% block nav %}
-	{% for navitem in nav: %}
-	<li>
-		<a href="{{ navitem.url }}">{{ navitem.name }}</a>
-	</li>
-	{% endfor %}
-{% endblock %}
-
 {% block content %}
 	<section class="main">
 		<h1>
